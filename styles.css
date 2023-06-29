@@ -23,12 +23,39 @@ main p {
     margin-bottom: 0;
 }
 
+.main-header {
+    height: 3rem;
+}
+
 .logo {
     grid-area: logo;
+    height: 100%;
+    line-height: 3rem;
+    grid-area: logo;
+    align-self: center;
 }
 
 .main-menu {
     grid-area: menu;
+    align-self: center;
+    justify-self: end;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-menu__item {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+}
+
+.main-menu .main-menu__item:last-of-type{
+    margin-right: 0;
 }
 
 .content-area {
@@ -43,7 +70,7 @@ main p {
     grid-area: sponsors;
 }
 
-.foote {
+.footer {
     grid-area: footer;
 }
 
@@ -52,4 +79,6 @@ main p {
     margin: 0 2rem;
     grid-template-columns: 2fr 6fr 4fr;
     grid-gap: 2rem 1rem;
+    grid-template-rows: 3rem;
+    grid-template-areas: "logo menu menu";
 }

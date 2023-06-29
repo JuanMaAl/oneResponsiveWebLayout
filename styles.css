@@ -64,6 +64,7 @@ main p {
 
 .sidebar {
     grid-area: sidebar;
+    padding: 1rem;
 }
 
 .sponsors-wrapper {
@@ -80,5 +81,8 @@ main p {
     grid-template-columns: 2fr 6fr 4fr;
     grid-gap: 2rem 1rem;
     grid-template-rows: 3rem;
-    grid-template-areas: "logo menu menu";
+    grid-template-areas: 
+    "logo menu menu"
+    "content content sidebar"
+    ;
 }

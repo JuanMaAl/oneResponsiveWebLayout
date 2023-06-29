@@ -1,0 +1,21 @@
+.sponsors {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 1rem;
+}
+
+.sponsor {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #fff;
+    border-radius: 0.625rem;
+    place-self: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsors-wrapper {
+    grid-area: sponsors;
+}

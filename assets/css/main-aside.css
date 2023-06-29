@@ -1,0 +1,8 @@
+.content-area {
+    grid-area: content;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding: 1rem;
+}
